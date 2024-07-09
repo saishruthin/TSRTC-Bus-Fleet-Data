@@ -1,0 +1,114 @@
+.custom-text-box{
+    position: relative;
+    width: 500px;
+    height: 69px;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    margin:20px auto; 
+}
+.custom-text-box:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    animation: rainbow 0.3s infinite;
+}
+.custom-text-box:hover .text-content{
+    transform: scale(1.05);
+    animation: None;
+}
+.custom-text-box .text-content{
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+    font-weight: bold;
+    animation: rainbow-text 3s infinite;
+
+}
+@keyframes rainbow{
+    0% {border-color: #ff0000; }
+    14% {border-color: #ff7f00;}
+    28% {border-color: #ffff00;}
+    42% {border-color: #00ff00;}
+    57% {border-color: #0000ff;}
+    71% {border-color: #4b0082;}
+    85% {border-color: #8b00ff;}
+    100% {border-color: #ff0000;}
+}
+@keyframes rainbow-text{
+    0% {border-color: #ff0000; }
+    14% {border-color: #ff7f00;}
+    28% {border-color: #ffff00;}
+    42% {border-color: #00ff00;}
+    57% {border-color: #0000ff;}
+    71% {border-color: #4b0082;}
+    85% {border-color: #8b00ff;}
+    100% {border-color: #ff0000;}
+}
+.custom-subheader{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+.custom-subheader:hover{
+    color: #2980b9;
+    font-size: 36px;
+    border-bottom: 2px solid #2980b9;
+    transition: font-size 0.3s ease-in-out;
+}
+.kpi-container{
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.kpi-container:hover{
+    transform: translateY(-5px);
+}
+.kpi-label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+.kpi-value{
+    font-size: 36px;
+    font-weight: 700;
+    color: #3498db;
+}
+.caution-box{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: 2px solid #ff9900;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    margin: 20px 0;
+}
+.caution-box:hover{
+    transform: scale(1.05);
+    background-color: #ff9933;
+}
+.caution-box .text{
+    position: relative;
+    z-index: 1;
+}

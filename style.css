@@ -1,0 +1,65 @@
+.kpi-container {
+    display: inline-block;
+    padding: 30px 40px;
+    margin: 20px;
+    border: 3px solid #3498db;
+    border-radius: 15px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+.kpi-container:hover{
+    background-color: #3498db;
+    color: #ffffff;
+}
+.kpi-container:active{
+    background-color: #2980b9;
+    color: #ffffff;
+}
+.kpi-label{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.kpi-value{
+    font-size: 30px;
+}
+.subheader{
+    font-size: 28px;
+    font-weight: bold;
+    color: #02D8E9;
+    margin-bottom: 20px;
+    transition: color 0.3s, font-size 0.3s;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.subheader:hover{
+    color: #ffffff;
+    font-size: 32px;
+}
+.don-container, .gra-container{
+    transition: transform 0.3s;
+}
+.don-container:hover, .gra-container:hover{
+    transform: scale(1.05);
+}
+.custom-title{
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.cutom-title:hover{
+    color: #ffffff;
+    background-color: #2980b9;
+    border-radius: 50%;
+    padding: 20px;
+    transform: scale(1.1);
+}
